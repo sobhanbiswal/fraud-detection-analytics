@@ -22,20 +22,35 @@ patterns and deliver actionable insights to business stakeholders.
 
 ## 🏗️ Architecture
 Raw CSV (3.69 GB)
+
 ↓
+
 Azure Blob Storage (raw-data container)
+
 ↓
+
 Azure Databricks (PySpark processing)
+
 ↓ EDA + Cleaning + Feature Engineering
+
 ↓
+
 Parquet (optimized storage → Blob Storage)
+
 ↓
+
 Azure SQL Database (Star Schema)
+
 ↓ FactTransactions + 3 Dimension Tables
+
 ↓
+
 Power BI Desktop
+
 ↓ 3 Dashboards + Drill Through + RLS
+
 ↓
+
 Business Insights & Recommendations
 
 ---
@@ -142,16 +157,27 @@ potentially less aware of fraud prevention practices.
 ## 📁 Repository Structure
 
 fraud-detection-analytics/
+
 ├── README.md
+
 ├── .gitignore
+
 ├── sql/
+
 │   └── business_queries.sql
+
 ├── powerbi/
+
 │   └── fraud_detection_dashboard.pbix
+
 └── docs/
+
 └── screenshots/
+
 ├── 01_executive_summary.png
+
 ├── 02_fraud_operations.png
+
 └── 03_customer_risk_profile.png
 
 ---
